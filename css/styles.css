@@ -54,7 +54,6 @@ a {
 
 button {
   font-family: inherit;
-  /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! display: block; */
   cursor: pointer;
 }
 
@@ -99,7 +98,6 @@ address {
   text-transform: uppercase;
   text-align: center;
   color: var(--black);
-
   margin-bottom: 50px;
 }
 
@@ -216,9 +214,7 @@ address {
   letter-spacing: -0.03em;
   color: var(--white);
   background-color: var(--orange);
-
   border: 1px solid var(--orange);
-
   border-radius: 100px;
   padding: 14px 40px;
   margin-right: 14px;
@@ -238,7 +234,6 @@ address {
   letter-spacing: -0.03em;
   color: var(--white);
   background-color: transparent;
-
   border: 1px solid var(--white);
   border-radius: 100px;
   padding: 14px 40px;
@@ -269,20 +264,24 @@ address {
   background-color: var(--violet);
   padding: 50px 0;
 }
+
 .features-list {
   display: flex;
   gap: 88px;
   padding: 0 18px;
 }
+
 .features-item {
   width: calc((100% - 88px * 2) / 3);
 }
+
 .features-subtitle {
   font-weight: 600;
   font-size: 18px;
   color: var(--white);
   margin-bottom: 18px;
 }
+
 .features-item-text {
   font-weight: 400;
   font-size: 14px;
@@ -393,13 +392,16 @@ address {
 .products {
   padding-top: 120px;
 }
+
 .products-title {
 }
+
 .products-list {
   display: flex;
   flex-wrap: wrap;
   gap: 24px 18px;
 }
+
 .products-item {
   padding: 32px 20px;
   border: 1px solid var(--gray10);
@@ -408,9 +410,11 @@ address {
   width: calc((100% - 18px * 3) / 4);
   text-align: center;
 }
+
 .products-img {
   margin-bottom: 8px;
 }
+
 .products-subtitle {
   font-weight: 600;
   font-size: 18px;
@@ -419,11 +423,11 @@ address {
   text-transform: uppercase;
   color: var(--black);
   margin-bottom: 2px;
-
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+
 .products-item-text {
   font-weight: 400;
   font-size: 12px;
@@ -432,6 +436,7 @@ address {
   color: var(--gray70);
   margin-bottom: 18px;
 }
+
 .products-btn {
   font-family: inherit;
   font-weight: 600;
@@ -450,19 +455,24 @@ address {
 .sellers {
   padding-top: 120px;
 }
+
 .sellers-title {
 }
+
 .sellers-list {
   display: flex;
   gap: 16px;
 }
+
 .sellers-item {
   border-radius: 15px 15px 0 0;
   overflow: hidden;
   width: calc((100% - 16px * 2) / 3);
 }
+
 .sellers-img {
 }
+
 .sellers-subtitle {
   font-weight: 600;
   font-size: 18px;
@@ -472,7 +482,6 @@ address {
   color: var(--black);
   text-align: center;
   padding: 28px 0;
-
   border: 1px solid var(--gray10);
   border-top: none;
   border-radius: 0 0 15px 15px;
@@ -484,13 +493,16 @@ address {
   padding-top: 120px;
   padding-bottom: 120px;
 }
+
 .review-title {
 }
+
 .review-list {
   display: flex;
   gap: 28px;
   margin-bottom: 50px;
 }
+
 .review-item {
   position: relative;
   padding: 56px 24px 24px;
@@ -500,11 +512,13 @@ address {
   background-color: var(--white);
   width: calc((100% - 28px * 2) / 3);
 }
+
 .review-img {
   position: absolute;
   top: 0;
   left: 0;
 }
+
 .review-subtitle {
   font-weight: 600;
   font-size: 18px;
@@ -513,6 +527,7 @@ address {
   color: var(--black);
   margin-bottom: 24px;
 }
+
 .review-item-text {
   font-weight: 400;
   font-size: 14px;
@@ -521,17 +536,17 @@ address {
   text-align: center;
   color: var(--gray70);
 }
+
 .review-btn {
+  display: block;
   font-family: inherit;
   font-weight: 600;
   font-size: 18px;
   color: var(--black);
   background-color: transparent;
-
   border: 1px solid var(--orange);
   border-radius: 100px;
   padding: 14px 40px;
-  display: block;
   margin: 0 auto;
 }
 
