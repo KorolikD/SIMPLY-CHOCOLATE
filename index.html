@@ -25,13 +25,11 @@
         <nav class="header-navigation">
           <a class="header-logo" href=""
             ><span class="italic">SIMPLY</span> CHOCOLATE
-            <img
-              class="header-logo-img"
-              src="./images/logo.svg"
-              alt="site logo"
-              width="24"
-              height="24"
-          /></a>
+
+            <svg class="header-social-img" width="24" height="24">
+              <use href="./images/svg-sprite.svg#logo"></use>
+            </svg>
+          </a>
           <ul class="header-menu">
             <li class="header-menu-item"><a class="header-menu-link" href="#home">Home</a></li>
             <li class="header-menu-item">
@@ -45,34 +43,25 @@
 
         <ul class="header-social-list">
           <li class="header-social-item">
-            <a class="header-social-link" href="" target="_blank" rel="noopener noreferrer"
-              ><img
-                class="header-social-img"
-                src="./images/header-facebook.svg"
-                alt="Facebook"
-                width="24"
-                height="24"
-            /></a>
+            <a class="header-social-link" href="" target="_blank" rel="noopener noreferrer">
+              <svg class="header-social-img" width="24" height="24">
+                <use href="./images/svg-sprite.svg#facebook"></use>
+              </svg>
+            </a>
           </li>
           <li class="header-social-item">
-            <a class="header-social-link" href="" target="_blank" rel="noopener noreferrer"
-              ><img
-                class="header-social-img"
-                src="./images/header-instagram.svg"
-                alt="Instagram"
-                width="24"
-                height="24"
-            /></a>
+            <a class="header-social-link" href="" target="_blank" rel="noopener noreferrer">
+              <svg class="header-social-img" width="24" height="24">
+                <use href="./images/svg-sprite.svg#instagram"></use>
+              </svg>
+            </a>
           </li>
           <li class="header-social-item">
-            <a class="header-social-link" href="" target="_blank" rel="noopener noreferrer"
-              ><img
-                class="header-social-img"
-                src="./images/header-twitter.svg"
-                alt="Twitter"
-                width="24"
-                height="24"
-            /></a>
+            <a class="header-social-link" href="" target="_blank" rel="noopener noreferrer">
+              <svg class="header-social-img" width="24" height="24">
+                <use href="./images/svg-sprite.svg#twitter"></use>
+              </svg>
+            </a>
           </li>
         </ul>
       </div>
@@ -88,7 +77,13 @@
           <div class="hero-buttons">
             <button class="hero-btn" type="button">Buy now</button>
             <a class="hero-btn-link" href="#how-it’s-made">How it’s made</a>
-            <a class="hero-btn-scroll-down" href="#taste">scroll down</a>
+            <a class="hero-btn-scroll-down" href="#taste"
+              >scroll down
+              <span class="hero-btn-scroll-down-btn">
+                <svg class="hero-btn-scroll-down-img" width="22" height="22">
+                  <use href="./images/svg-sprite.svg#scroll-down"></use></svg
+              ></span>
+            </a>
           </div>
         </div>
       </section>
@@ -365,33 +360,56 @@
           <h2 class="sellers-title section-title"><span class="accent">Top</span> sellers</h2>
           <ul class="sellers-list">
             <li class="sellers-item">
-              <img
-                class="sellers-img"
-                src="./images/seller-img-1.jpg"
-                alt="CHOCOLATE WITH NUTS"
-                width="368"
-                height="464"
-              />
+              <div class="sellers-item-overlay">
+                <img
+                  class="sellers-img"
+                  src="./images/seller-img-1.jpg"
+                  alt="CHOCOLATE WITH NUTS"
+                  width="368"
+                  height="464"
+                />
+                <p class="sellers-item-text">
+                  Chocolate with nuts is a delectable combination that brings together the
+                  smoothness of chocolate and the crunchiness of nuts. Whether it's milk chocolate,
+                  dark chocolate, or white chocolate, the addition of nuts adds a whole new
+                  dimension of flavor and texture.
+                </p>
+              </div>
               <h3 class="sellers-subtitle">CHOCOLATE WITH NUTS</h3>
             </li>
             <li class="sellers-item">
-              <img
-                class="sellers-img"
-                src="./images/seller-img-2.jpg"
-                alt="CHOCOLATE WITH FRUITS"
-                width="368"
-                height="464"
-              />
+              <div class="sellers-item-overlay">
+                <img
+                  class="sellers-img"
+                  src="./images/seller-img-2.jpg"
+                  alt="CHOCOLATE WITH FRUITS"
+                  width="368"
+                  height="464"
+                />
+                <p class="sellers-item-text">
+                  Chocolate with fruit is an unbeatable combination of two of the tastiest things in
+                  the world. This dessert combines delicate and aromatic chocolate with fresh and
+                  juicy fruits, creating a true poetry of taste.
+                </p>
+              </div>
               <h3 class="sellers-subtitle">CHOCOLATE WITH FRUITS</h3>
             </li>
             <li class="sellers-item">
-              <img
-                class="sellers-img"
-                src="./images/seller-img-3.jpg"
-                alt="DARK CHOCOLATE"
-                width="368"
-                height="464"
-              />
+              <div class="sellers-item-overlay">
+                <img
+                  class="sellers-img"
+                  src="./images/seller-img-3.jpg"
+                  alt="DARK CHOCOLATE"
+                  width="368"
+                  height="464"
+                />
+                <p class="sellers-item-text">
+                  Dark chocolate is a rich and indulgent treat that is beloved by many chocolate
+                  enthusiasts. It is made from cocoa beans, which are roasted, ground, and then
+                  processed to produce chocolate liquor. Dark chocolate contains a higher percentage
+                  of cocoa solids compared to milk chocolate.
+                </p>
+              </div>
               <h3 class="sellers-subtitle">DARK CHOCOLATE</h3>
             </li>
           </ul>
@@ -462,34 +480,25 @@
             <p class="footer-subtitle">Social networks</p>
             <ul class="footer-socials-list">
               <li class="footer-socials-item">
-                <a class="footer-socials-link" href="" target="_blank" rel="noopener noreferrer"
-                  ><img
-                    class="footer-socials-img"
-                    src="./images/footer-instagram-network.svg"
-                    alt="Instagram"
-                    width="24"
-                    height="24"
-                /></a>
+                <a class="footer-socials-link" href="" target="_blank" rel="noopener noreferrer">
+                  <svg class="header-social-img" width="24" height="24">
+                    <use href="./images/svg-sprite.svg#instagram"></use>
+                  </svg>
+                </a>
               </li>
               <li class="footer-socials-item">
-                <a class="footer-socials-link" href="" target="_blank" rel="noopener noreferrer"
-                  ><img
-                    class="footer-socials-img"
-                    src="./images/footer-facebook-network.svg"
-                    alt="Facebook"
-                    width="24"
-                    height="24"
-                /></a>
+                <a class="footer-socials-link" href="" target="_blank" rel="noopener noreferrer">
+                  <svg class="header-social-img" width="24" height="24">
+                    <use href="./images/svg-sprite.svg#facebook"></use>
+                  </svg>
+                </a>
               </li>
               <li class="footer-socials-item">
-                <a class="footer-socials-link" href="" target="_blank" rel="noopener noreferrer"
-                  ><img
-                    class="footer-socials-img"
-                    src="./images/footer-twitter-network.svg"
-                    alt="Twitter"
-                    width="24"
-                    height="24"
-                /></a>
+                <a class="footer-socials-link" href="" target="_blank" rel="noopener noreferrer">
+                  <svg class="header-social-img" width="24" height="24">
+                    <use href="./images/svg-sprite.svg#twitter"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
           </div>
