@@ -141,7 +141,8 @@ address {
 }
 
 .header-logo-img {
-  margin-left: 4px;
+  fill: transparent;
+  stroke: var(--orange);
 }
 
 .header-menu {
@@ -173,22 +174,29 @@ address {
 }
 
 .header-social-item {
+  width: 40px;
+  height: 40px;
 }
 
 .header-social-link {
   display: flex;
-  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
   border: 1px solid var(--gray10);
   border-radius: 10px;
+  color: var(--black);
   transition: all 250ms var(--transition);
 }
 
 .header-social-link:hover {
   border: 1px solid var(--orange10);
-  fill: var(--orange);
+  color: var(--orange);
 }
 
-.header-social-img {
+.header-social-icon {
+  fill: currentColor;
 }
 
 /*? HERO */
@@ -201,12 +209,12 @@ address {
 
   padding: 381px 40px 40px;
   border-radius: 30px;
+  background-color: var(--gray60);
   background-image: linear-gradient(to bottom, var(--gray40), var(--gray40)),
     url(../images/hero-img.jpg);
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-color: var(--gray60);
 }
 
 .hero-title {
@@ -278,28 +286,29 @@ address {
   transition: all 250ms var(--transition);
 }
 
-.hero-btn-scroll-down:hover,
-.hero-btn-scroll-down:focus {
-  color: var(--orange);
-}
-
-/* TODO ====================================== змінити колір стрілки при ховері*/
-
-.hero-btn-scroll-down-btn {
+.hero-btn-scroll-down::after {
+  content: '';
   display: flex;
-  justify-content: center;
   align-items: center;
   width: 38px;
   height: 38px;
   border-radius: 50%;
   background-color: var(--white);
+  background-image: url(../images/svg/scroll-down-orange.svg);
+  background-repeat: no-repeat;
+  background-position: center;
   transition: all 250ms var(--transition);
 }
 
-.hero-btn-scroll-down:hover .hero-btn-scroll-down-btn,
-.hero-btn-scroll-down:focus .hero-btn-scroll-down-btn {
+.hero-btn-scroll-down:hover,
+.hero-btn-scroll-down:focus {
+  color: var(--orange);
+}
+
+.hero-btn-scroll-down:hover::after,
+.hero-btn-scroll-down:focus::after {
   background-color: var(--orange);
-  fill: var(--white);
+  background-image: url(../images/svg/scroll-down-white.svg);
 }
 
 .hero-btn-scroll-down-img {
@@ -680,23 +689,29 @@ address {
 }
 
 .footer-socials-item {
+  width: 40px;
+  height: 40px;
 }
 
 .footer-socials-link {
   display: flex;
-  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
   border: 1px solid var(--white10);
   border-radius: 10px;
+  color: var(--white);
   transition: all 250ms var(--transition);
-  fill: var(--white);
 }
 
 .footer-socials-link:hover {
   border: 1px solid var(--orange10);
-  fill: var(--orange);
+  color: var(--orange);
 }
 
-.footer-socials-img {
+.footer-socials-icon {
+  fill: currentColor;
 }
 
 .footer-address {
